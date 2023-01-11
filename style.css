@@ -1,0 +1,57 @@
+#HeaderCarousel,
+#HeaderCarousel img {
+  height: 50vh !important;
+  min-height: 300px !important;
+}
+
+#HeaderCarousel img {
+  object-fit: cover;
+}
+
+#HeaderCarousel h5,
+#HeaderCarousel p {
+  text-shadow: 0rem 0rem 1rem black !important;
+  color: white;
+}
+
+
+form[role="search"] {
+  position: relative;
+}
+
+#navSearch-results {
+  width: 98%;
+  position: absolute;
+  background: white;
+  height: auto;
+  border-radius: 5px;
+  top: 40px;
+  z-index: 3;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+#navSearch-results a:hover {
+  opacity: 0.9;
+}
+
+.card:target {
+  animation-name: glowNow;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes glowNow {
+  from {
+    box-shadow: 0 0 1rem red;
+  }
+  to {
+    box-shadow: none;
+  }
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
